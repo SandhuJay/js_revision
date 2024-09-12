@@ -9,6 +9,7 @@ console.log(Object.keys(newUser)) //->return an array:[ 'id', 'name', 'isLoggedI
 console.log(Object.values(newUser)) //->return value of object:[ '123abc', 'John', false ]
 console.log(Object.entries(newUser))//->return array inside array[[key:value]] :[ [ 'id', '123abc' ], [ 'name', 'John' ], [ 'isLoggedIn', false ] ]
 console.log(newUser.hasOwnProperty('isLoggedIn'))//-> true : check weather the property exist or not
+
 const regularUser={
     email:"some@gmail.com",
     fullname:{
@@ -37,3 +38,26 @@ const obj4={...obj1,...obj2} //spread
     email:"user2@gmail.com"
  }]
 
+ // *** Object de-structure ***
+
+ const cource={
+    courcename:"javascript",
+    price:"999",
+    courceInstructor:"Hitesh"
+ }
+const {courceInstructor}=cource // same as :const {courceInstructor:instructor}=cource 
+console.log(courceInstructor) //console.log(instructor)
+
+//  *** API *** -JSON
+
+/*Json Data format
+{
+    "name":"xyz",
+    "location":"delhi"
+}
+[
+    {},
+    {},
+    {}
+]
+*/
