@@ -35,5 +35,16 @@ coding.forEach((item,index,arr)=>{
  }]
 
  pgm.forEach((item)=>{
- console.log(`${item.langName} ->${item.fileName} `)
+ //console.log(`${item.langName} ->${item.fileName} `)
  })
+
+//  const values =coding.forEach((item)=>{
+// //console.log(item)
+// return item
+//  })
+//  console.log(values)//->undefined
+const values =[]
+coding.forEach((item)=>{
+   values.push(item)
+})
+console.log(values)
