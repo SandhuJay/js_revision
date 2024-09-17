@@ -35,6 +35,7 @@ const books = [
 
   // *** Reduce *** ->reduce() method reduces an array of values down to just one value.To get the output value, it runs a reducer function on each element of the array.
 //arr.reduce(callback[, initialValue])
+
 const Numbers=[1,2,3,4,5]
 const total=Numbers.reduce(function(acc,curval){
     console.log(`accumulator:${acc} and current value:${curval}`)
